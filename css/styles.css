@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
@@ -8,6 +10,22 @@ ul,
 ol {
   list-style-type: none;
 }
+.head .container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+.container nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.container nav ul {
+  display: flex;
+  gap: 40px;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -49,7 +67,11 @@ ol {
 .contacts {
   font-style: normal;
 }
-.contact-links {
+.contacts ul {
+  display: flex;
+  gap: 40px;
+}
+.contacts .contact-links {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -64,7 +86,12 @@ ol {
 .contact-links:focus {
   color: #404bbf;
 }
-.hero {
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #2e2f42;
 }
 .hero-title {
@@ -91,12 +118,34 @@ ol {
 .button-text:active {
   background-color: #404bbf;
 }
+.about .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 .about-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+.about .container ul {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+}
+.about .container ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 .mini-titles {
   font-weight: 500;
@@ -110,9 +159,20 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.team {
+
+.team .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
   background: #f4f4fd;
 }
+.team .container ul {
+  display: flex;
+  gap: 24px;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -139,6 +199,19 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+}
+
+.section-portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-portfolio .container .portfolio {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .portfolio-title {
   font-size: 36px;
@@ -167,4 +240,10 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
