@@ -1,31 +1,58 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 120px 0;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.head .container {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.head {
+  border-bottom: 1px solid #e7e9fc;
+}
+.container-head {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
   display: flex;
   gap: 40px;
   align-items: center;
-  justify-content: space-around;
 }
-.container nav {
-  display: flex;
-  gap: 40px;
-  align-items: center;
+.logo-header {
+  padding: 24px 0;
+  margin-right: 76px;
 }
-.container nav ul {
-  display: flex;
-  gap: 40px;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -48,30 +75,36 @@ ol {
 .studio-footer {
   color: #f4f4fd;
 }
-.menu-studio {
+.menu-links {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
 }
-.menu-studio:hover {
+.menu-links:hover {
   color: #404bbf;
 }
-.menu-studio:active {
+.menu-links:active {
   color: #404bbf;
 }
-.menu-studio:focus {
+.menu-links:focus {
   color: #404bbf;
 }
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
-.contacts ul {
+.contacts-list {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
-.contacts .contact-links {
+.contact-links {
+  display: block;
+  padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -86,89 +119,78 @@ ol {
 .contact-links:focus {
   color: #404bbf;
 }
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+/* header */
+.section-hero {
   background-color: #2e2f42;
 }
+
 .hero-title {
+  padding: 68px 316px 48px 316px;
+  margin: 0 auto;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.button-text {
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 68px;
+  padding: 0;
+  display: block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
   background-color: #4d5ae5;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
 }
-.button-text:hover {
+.button:hover {
   background-color: #404bbf;
 }
-.button-text:focus {
+.button:focus {
   background-color: #404bbf;
 }
-.button-text:active {
+.button:active {
   background-color: #404bbf;
 }
-.about .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.about-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-.about .container ul {
+/* hero section 1 */
+
+.about-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
-  align-content: flex-start;
-  align-items: center;
 }
-.about .container ul li {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
+.about-list-item {
+  width: calc((100% - (24px * 3)) / 4);
 }
-.mini-titles {
+.about-mini-titles {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .about-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* about section 2 */
 
-.team .container {
+.team .container-team {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
+
   background: #f4f4fd;
 }
-.team .container ul {
+.team .container-team ul {
   display: flex;
   gap: 24px;
 }
@@ -201,13 +223,13 @@ ol {
   color: #434455;
 }
 
-.section-portfolio .container {
+.section-portfolio .container-portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section-portfolio .container .portfolio {
+.section-portfolio .container-portfolio .portfolio {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
@@ -233,17 +255,16 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.site-footer {
-  background-color: #2e2f42;
-}
+
 .last-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.site-footer .container {
+.site-footer .container-footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  background-color: #2e2f42;
 }
