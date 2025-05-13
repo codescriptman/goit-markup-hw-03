@@ -269,6 +269,7 @@ p {
   align-items: start;
   gap: 8px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-mini-title {
   font-weight: 500;
