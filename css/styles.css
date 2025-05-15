@@ -129,9 +129,8 @@ p {
 }
 
 .hero-title {
-  padding-bottom: 48px;
   max-width: 496px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -140,10 +139,7 @@ p {
 }
 .button {
   min-width: 169px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 68px;
-  padding: 0;
+  margin: 0 auto;
   display: block;
   font-weight: 500;
   line-height: 1.5;
@@ -192,7 +188,6 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
   margin-bottom: 8px;
 }
 .about-text {
@@ -217,10 +212,6 @@ p {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-card-text {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  gap: 8px;
   padding: 32px 0;
 }
 .team-title {
@@ -267,16 +258,11 @@ p {
   flex-wrap: wrap;
 }
 .portfolio-list-item {
-  border: 1px solid #e7e9fc;
   background-color: #ffffff;
   width: calc((100% - (24px * 2)) / 3);
 }
 .portfolio-card-text {
   padding: 32px 16px;
-  flex-direction: column;
-  display: flex;
-  align-items: start;
-  gap: 8px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -299,7 +285,6 @@ p {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   display: block;
-  padding-bottom: 100px;
   max-width: 264px;
 }
 .site-footer {
